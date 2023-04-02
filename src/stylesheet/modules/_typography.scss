@@ -1,0 +1,11 @@
+.txt-header {
+  @include typography(16px, 23px, 300);
+}
+
+.txt-footer {
+  @include typography(11px, 16px, 300);
+}
+
+.txt-time-item {
+  @include typography(15px, 18px, 400);
+}

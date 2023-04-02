@@ -1,0 +1,17 @@
+.header {
+  height: 64px;
+  width: 100%;
+  background-color: map-get($color, dark-text);
+  padding: 0 167px;
+@include flex(space-between, center);
+  &-logo {
+	height: 64px;
+  }
+  &-menu{
+	@include flex(center , center);
+	padding-right: 20px ;
+	&-title {
+	  padding: 0 10px;
+	}
+  }
+}

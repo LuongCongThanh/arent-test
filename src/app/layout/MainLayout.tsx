@@ -15,7 +15,7 @@ const routes = [
 
 const MainLayout = () => {
 	return (
-			<div>
+			<div className="main-layout">
 				<BrowserRouter>
 					<Header />
 					<Routes>

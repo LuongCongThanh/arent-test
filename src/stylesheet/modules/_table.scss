@@ -1,0 +1,32 @@
+.load-more {
+  @include flex(center, center);
+  flex-direction: column;
+  margin: 0 150px;
+
+  &-list {
+	@include flex(flex-start, unset);
+	flex-wrap: wrap;
+	height: 100%;
+	&-item {
+	  position: relative;
+	  margin: 4px;
+
+	  &-images {
+		width: 234px;
+		height: 234px;
+	  }
+
+	  &-time {
+		position: absolute;
+		bottom: 3px;
+		left: 0;
+		height: 32px;
+		width: 120px;
+		text-align: center;
+		background-color: map-get($color, primary-300);
+		line-height: 32px;
+	  }
+	}
+  }
+}
+

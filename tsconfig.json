@@ -18,7 +18,8 @@
     "baseUrl": "./src",
     "paths": {
       "@pages/*": ["app/pages/*"],
-      "@stylesheet/*": ["stylesheet/*"]
+      "@stylesheet/*": ["stylesheet/*"],
+      "@assets":["assets/*"],
     }
   },
   "include": ["src"],

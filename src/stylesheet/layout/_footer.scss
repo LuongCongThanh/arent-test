@@ -1,0 +1,8 @@
+.footer {
+  height: 128px;
+  @include flex(flex-start, center);
+  padding: 0 160px;
+  &-title {
+	padding-right: 44px;
+  }
+}

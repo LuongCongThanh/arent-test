@@ -23,9 +23,6 @@ html, body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
-  @include respond-below(small) {
-    font-size: 3.55556vw;
-  }
 }
 
 
