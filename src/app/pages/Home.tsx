@@ -6,6 +6,7 @@ import column3 from '@assets/images/column-3.jpg';
 import column4 from '@assets/images/column-4.jpg';
 import column5 from '@assets/images/column-5.jpg';
 import hexagon from '@assets/images/img.png';
+import {ReactComponent as IconKnife} from '@assets/icons/icon_knife.svg';
 const Home = () => {
 	const listData = [
 		{
@@ -118,10 +119,11 @@ const Home = () => {
 	]
 	return (
 		<div className="home">
-			<div className="hexagon">
-				<img src={hexagon} alt="hexagon"/>
-				<div className="content">
-					<p></p>
+			<div className="home-hexagon">
+				{/*<img src={hexagon} alt="hexagon" className='home-hexagon-image'/>*/}
+				<div className="home-hexagon-content">
+					<IconKnife/>
+					<p>Morning</p>
 				</div>
 			</div>
 			{/*<button className="btn btn-primary">記録をもっと見る</button>*/}

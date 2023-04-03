@@ -1,6 +1,20 @@
 .home {
-.hexagon{
-  width: 134px;
-  height: 116px;
-}
+  &-hexagon {
+	position: relative;
+	width: 134px;
+	height: 116px;
+	background-image: url('/assets/images/img.png');
+	&-image {
+	  display: block;
+	  //width: 100%;
+	  //height: auto;
+	}
+
+	&-content {
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+  }
 }
