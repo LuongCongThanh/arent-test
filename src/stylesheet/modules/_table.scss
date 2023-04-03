@@ -7,6 +7,7 @@
 	@include flex(flex-start, unset);
 	flex-wrap: wrap;
 	height: 100%;
+
 	&-item {
 	  position: relative;
 	  margin: 4px;
@@ -30,3 +31,47 @@
   }
 }
 
+.table-exercise {
+  @include flex(flex-start, center);
+}
+
+.exercise {
+  width: 100%;
+  @include flex(space-between, center);
+
+  &-list {
+	margin: 0 24px;
+  }
+
+  .exercise-info {
+	@include flex(unset, center);
+	border-bottom: 1px solid map-get($color, border);
+
+	&-dots {
+	  height: 5px;
+	  width: 5px;
+	  border-radius: 50%;
+	  display: inline-block;
+	}
+
+	&-inner {
+	  height: 48px;
+
+	  @include flex(space-between, flex-start);
+	  width: 416px;
+	  padding: 0 16px;
+
+	  &-text {
+		@include flex(unset, unset);
+		flex-direction: column;
+
+	  }
+
+	  &-time {
+
+	  }
+	}
+
+
+  }
+}

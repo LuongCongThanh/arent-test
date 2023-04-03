@@ -20,7 +20,7 @@ const Footer = () => {
 	return (
 		<div className="footer bg-dark-text">
 			{listMenu && listMenu.map((menuItem: any, index: number) => (
-				<span className="footer-title txt-footer color-light ">{menuItem.title}</span>
+				<span className="footer-title txt-footer color-light" key={index}>{menuItem.title}</span>
 			))}
 		</div>
 	);

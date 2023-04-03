@@ -2,14 +2,20 @@ import React from 'react';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from "@pages/Home";
+import TopPage from "@pages/TopPage";
+import RecordPage from "@pages/RecordPage";
 
 
 const routes = [
 	{
 		path: '/',
 		exact: true,
-		element: <Home/>,
+		element: <TopPage/>,
+	},
+	{
+		path: '/record',
+		exact: true,
+		element: <RecordPage/>,
 	},
 ];
 

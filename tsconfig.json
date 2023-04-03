@@ -18,8 +18,9 @@
     "baseUrl": "./src",
     "paths": {
       "@pages/*": ["app/pages/*"],
+      "@shared/*":["app/shared/*"],
       "@stylesheet/*": ["stylesheet/*"],
-      "@assets":["assets/*"],
+      "@assets/*":["assets/*"],
     }
   },
   "include": ["src"],

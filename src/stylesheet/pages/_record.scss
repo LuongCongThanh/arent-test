@@ -1,0 +1,22 @@
+.record {
+  margin: 0 160px;
+
+  &-chart {
+	margin-bottom: 56px;
+
+	&-month {
+	  width: 100%;
+
+	  .month-item {
+		width: 100px;
+		border-radius: 11px;
+	  }
+	}
+  }
+
+  &-exercise {
+
+	height: 264px;
+	overflow-y: scroll;
+  }
+}

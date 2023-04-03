@@ -21,10 +21,10 @@ const Header = () => {
 			</div>
 			<div className="header-menu color-light">
 				{listMenu && listMenu.map((menuItem: any, index: number) => (
-					<>
+					<React.Fragment  key={index}>
 						<span className="icon txt-xxl">{menuItem.icon}</span>
 						<span className="header-menu-title txt-header">{menuItem.title}</span>
-					</>
+					</React.Fragment>
 				))}
 			</div>
 		</div>
