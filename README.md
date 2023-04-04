@@ -4,6 +4,7 @@ Arent-test
 
 - Create a source code.
 - Build a 3 page design in figma blueprints.
+- No Responsive and I build in screen '1280x720'
 
 ## Tech Stack:
 
