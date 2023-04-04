@@ -14,162 +14,161 @@ import TableLoadMore from '@shared/partial/TableLoadMore';
 import LineChartCustom from '@shared/partial/LineChartCustom';
 
 const TopPage = () => {
-	const listData = [
-		{
-			img: column1,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column2,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column3,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column4,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column5,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column5,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-		{
-			img: column4,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column3,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column2,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column1,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column2,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column4,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column5,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column1,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column3,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column5,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column1,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column4,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column2,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		}, {
-			img: column5,
-			time: '05.21.Morning',
-			content: '',
-			tags: ''
-		},
-	]
+    const listData = [
+        {
+            img: column1,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column2,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column3,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column4,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column5,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column5,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+        {
+            img: column4,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column3,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column2,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column1,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column2,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column4,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column5,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column1,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column3,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column5,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column1,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column4,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column2,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        }, {
+            img: column5,
+            time: '05.21.Morning',
+            content: '',
+            tags: ''
+        },
+    ]
 
-	const listHexagons = [
-		{
-			title: 'Morning',
-			icon: <IconKnife/>
-		},
-		{
-			title: 'Lunch',
-			icon: <IconKnife/>
-		},
-		{
-			title: 'Dinner',
-			icon: <IconKnife/>
-		},
-		{
-			title: 'Snack',
-			icon: <IconCup/>
-		}
+    const listHexagons = [
+        {
+            title: 'Morning',
+            icon: <IconKnife/>
+        },
+        {
+            title: 'Lunch',
+            icon: <IconKnife/>
+        },
+        {
+            title: 'Dinner',
+            icon: <IconKnife/>
+        },
+        {
+            title: 'Snack',
+            icon: <IconCup/>
+        }
 
-	]
-	return (
-		<div className="home">
-			<div className="home-header">
-				<div className="home-header-banner">
-					<img src={banner} alt="banner" className="home-header-banner-img" />
-				</div>
-				<div className="home-header-chart">
-					<LineChartCustom/>
-				</div>
-			</div>
-			<div className="home-hexagon">
-				{listHexagons && listHexagons.map((item: any, index: number) => (
-					<div className="home-hexagon-item" key={index}>
-						<img src={hexagon} alt="hexagon" className='home-hexagon-item-image'/>
-						<div className="home-hexagon-item-content">
-							{item.icon}
-							<p className="color-light">{item.title}</p>
-						</div>
-					</div>
-				))}
-			</div>
-
-
-			{/*<button className="btn btn-primary">記録をもっと見る</button>*/}
-			<TableLoadMore data={listData} initialItems={8} loadMoreItems={4}/>
-		</div>
-	);
+    ]
+    return (
+        <div className="home">
+            <div className="home-header">
+                <div className="home-header-banner">
+                    <img src={banner} alt="banner" className="home-header-banner-img"/>
+                </div>
+                <div className="home-header-chart">
+                    <LineChartCustom/>
+                </div>
+            </div>
+            <div className="home-hexagon">
+                {listHexagons && listHexagons.map((item: any, index: number) => (
+                    <div className="home-hexagon-item" key={index}>
+                        <img src={hexagon} alt="hexagon" className='home-hexagon-item-image'/>
+                        <div className="home-hexagon-item-content">
+                            {item.icon}
+                            <p className="color-light">{item.title}</p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+            <div className="home-table">
+                <TableLoadMore data={listData} initialItems={8} loadMoreItems={4}/>
+            </div>
+        </div>
+    );
 };
 
 export default TopPage;

@@ -1,42 +1,48 @@
 .home {
-  &-header{
-	@include flex(unset, unset);
-	height: 316px;
+  &-header {
+    @include flex(unset, unset);
+    height: 316px;
 
-	&-banner{
-	  &-img{
-		width: 540px;
-	  }
-	}
-	&-chart {
-	  width: 100%;
-	  height: 100%;
-	}
+    &-banner {
+      &-img {
+        width: 540px;
+      }
+    }
+
+    &-chart {
+      width: 100%;
+      height: 100%;
+    }
   }
+
   &-hexagon {
-	@include flex(center, center);
-	margin: 25px 0;
+    @include flex(center, center);
+    margin: 25px 0;
 
-	&-item {
-	  position: relative;
-	  width: 100.41px;
-	  height: 116px;
-	  margin-right: 84px;
+    &-item {
+      position: relative;
+      width: 100.41px;
+      height: 116px;
+      margin-right: 84px;
 
-	  &:last-child {
-		margin-right: unset;
-	  }
+      &:last-child {
+        margin-right: unset;
+      }
 
-	  &-image {
-		display: block;
-	  }
+      &-image {
+        display: block;
+      }
 
-	  &-content {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	  }
-	}
+      &-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &-table {
+    margin: 0 150px;
   }
 }

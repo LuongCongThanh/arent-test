@@ -3,15 +3,38 @@
   width: 100%;
   background-color: map-get($color, dark-text);
   padding: 0 167px;
-@include flex(space-between, center);
+  @include flex(space-between, center);
+  position: relative;
+
   &-logo {
-	height: 64px;
+    height: 64px;
   }
-  &-menu{
-	@include flex(center , center);
-	padding-right: 20px ;
-	&-title {
-	  padding: 0 10px;
-	}
+
+  &-menu {
+    @include flex(center, center);
+    padding-right: 20px;
+
+    &-title {
+      padding: 0 10px;
+    }
+  }
+
+  &-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 167px;
+    z-index: 1000;
+
+    &-item {
+      height: 72px;
+      width: 280px;
+      @include flex(flex-start, center);
+      padding-left: 24px;
+      border-bottom: 1px solid map-get($color, border);
+
+      &:hover {
+        background-color: map-get($color, dark-text);
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
-$value : 8;
-$sizeList : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
+$value: 8;
+$sizeList: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
 
 // Padding
 @each $size in $sizeList {
@@ -48,17 +48,4 @@ $sizeList : 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10;
   .mr-#{$size} {
     margin-right: $value * $size + px;
   }
-}
-
-.mt-05 {
-  margin-top: 4px;
-}
-.ml-05 {
-  margin-left: 4px;
-}
-.mb-05 {
-  margin-bottom: 4px;
-}
-.pl-05 {
-  padding-left: 4px;
 }

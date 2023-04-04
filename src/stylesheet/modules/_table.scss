@@ -1,46 +1,50 @@
 .load-more {
   @include flex(center, center);
   flex-direction: column;
-  margin: 0 150px;
 
   &-list {
-	@include flex(center, unset);
-	flex-wrap: wrap;
-	height: 100%;
+    @include flex(center, unset);
+    flex-wrap: wrap;
+    height: 100%;
 
-	&-item {
-	  position: relative;
-	  margin: 4px;
+    &-item {
+      width: 234px;
 
-	  &-images {
-		width: 234px;
-		height: 234px;
-	  }
+      &-inner {
+        position: relative;
+        margin: 4px;
 
-	  &-time {
-		position: absolute;
-		bottom: 3px;
-		left: 0;
-		height: 32px;
-		width: 120px;
-		text-align: center;
-		background-color: map-get($color, primary-300);
-		line-height: 32px;
-	  }
-	}
+        &-images {
+          width: 234px;
+          height: 234px;
+        }
+
+        &-time {
+          position: absolute;
+          bottom: 3px;
+          left: 0;
+          height: 32px;
+          width: 120px;
+          text-align: center;
+          background-color: map-get($color, primary-300);
+          line-height: 32px;
+        }
+      }
+    }
   }
 
-  &-text{
-	@include flex(center, center);
-	flex-wrap: wrap;
+  &-text {
+    @include flex(center, center);
+    flex-wrap: wrap;
+    width: 100%;
 
-	&-item{
-	  border: 2px solid map-get($color, border-black);
-	  flex-wrap: wrap;
-	  height: 231px;
-	  width: 231px;
-	  margin: 8px;
-	}
+    &-item {
+      border: 2px solid map-get($color, border-black);
+      flex-wrap: wrap;
+      height: 231px;
+      width: 231px;
+      margin: 4px;
+    }
   }
 }
 
@@ -53,32 +57,32 @@
   @include flex(space-between, center);
 
   &-list {
-	margin: 0 24px;
+    margin: 0 24px;
   }
 
   .exercise-info {
-	@include flex(unset, center);
-	border-bottom: 1px solid map-get($color, border);
+    @include flex(unset, center);
+    border-bottom: 1px solid map-get($color, border);
 
-	&-dots {
-	  height: 5px;
-	  width: 5px;
-	  border-radius: 50%;
-	  display: inline-block;
-	}
+    &-dots {
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      display: inline-block;
+    }
 
-	&-inner {
-	  height: 48px;
+    &-inner {
+      height: 48px;
 
-	  @include flex(space-between, flex-start);
-	  width: 416px;
-	  padding: 0 16px;
+      @include flex(space-between, flex-start);
+      width: 416px;
+      padding: 0 16px;
 
-	  &-text {
-		@include flex(unset, unset);
-		flex-direction: column;
-	  }
-	}
+      &-text {
+        @include flex(unset, unset);
+        flex-direction: column;
+      }
+    }
 
 
   }

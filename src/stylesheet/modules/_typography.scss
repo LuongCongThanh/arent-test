@@ -37,3 +37,11 @@
 .txt_diary {
   @include typography(12px, 17px, 300);
 }
+
+.txt-column-h3 {
+  @include typography(18px, 26px, 300);
+}
+
+.txt-tags {
+  @include typography(12px, 22px, 300);
+}

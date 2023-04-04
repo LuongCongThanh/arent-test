@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-	LineChart,
-	Line,
-	XAxis,
-	CartesianGrid,
-	Tooltip,
-} from "recharts";
+import {CartesianGrid, Line, LineChart, Tooltip, XAxis,} from "recharts";
 
 const LineChartCustom = () => {
 	const data = [
@@ -73,19 +67,13 @@ const LineChartCustom = () => {
 
 	return (
 		<div className="bg-dark-chart">
-			<LineChart width={850} height={316} data={data} margin={{ left: 60, right: 20 , top: 20, bottom: 20}}>
+			<LineChart width={850} height={316} data={data} margin={{left: 60, right: 20, top: 20, bottom: 20}}>
 				<XAxis dataKey="name" padding={{left: 30, right: 30}} tick={{fill: "#fff"}}/>
 				<Tooltip/>
 				<CartesianGrid strokeDasharray="3 3"/>
 				<Line type="monotone" dataKey="uv" stroke="#FFCC21" activeDot={{r: 6}}/>
 				<Line type="monotone" dataKey="pv" stroke="#8FE9D0" activeDot={{r: 6}}/>
 			</LineChart>
-			<p className="record-chart-month">
-				<span className="month-item bg-light color-primary-300 mr-2">日</span>
-				<span className="month-item bg-light color-primary-300 mr-2">週</span>
-				<span className="month-item bg-light color-primary-300 mr-2">月</span>
-				<span className="month-item bg-primary-300 color-light mr-2">年</span>
-			</p>
 		</div>
 
 	);

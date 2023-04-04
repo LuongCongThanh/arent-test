@@ -2,26 +2,29 @@
   @include flex(space-between, center);
 
   &-item {
-	border: 24px solid #FFCC21;
-position: relative;
-	&-img {
-	  width: 240px;
-	  height: 240px;
-      filter:brightness(20%);
+    border: 24px solid #FFCC21;
+    position: relative;
 
-	}
+    &-img {
+      width: 240px;
+      height: 240px;
+      filter: brightness(20%);
 
-    .card-content{
+    }
+
+    .card-content {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       width: 100%;
+
       &-title {
         font-family: $font-Inter;
         margin-bottom: 12px;
       }
+
       &-text {
         margin: 0 auto;
         height: 24px;
@@ -29,8 +32,6 @@ position: relative;
         background-color: map-get($color, primary-400)
 
       }
-
     }
-
   }
 }

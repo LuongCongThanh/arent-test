@@ -40,39 +40,21 @@ button {
   color: map-get($color, light);
 
   &.btn-no-border {
-	border: 0;
+    border: 0;
   }
 
   @mixin btn-color($btn-color) {
-	background-color: transparent;
-	color: map-get($color, $btn-color);
-	border-color: map-get($color, $btn-color);
+    background-color: transparent;
+    color: map-get($color, $btn-color);
+    border-color: map-get($color, $btn-color);
 
-	&:hover {
-	  opacity: 0.75;
-	}
+    &:hover {
+      opacity: 0.75;
+    }
   }
 
   &-primary {
-	@include btn-color(primary);
-	background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
+    @include btn-color(primary);
+    background: linear-gradient(32.95deg, #FFCC21 8.75%, #FF963C 86.64%);
   }
-
-
-  // button icon
-  &-icon {
-	height: 100%;
-	min-height: 20px;
-	min-width: 20px;
-	padding: 0;
-
-	&:hover {
-	  opacity: 0.75;
-	}
-  }
-
-  &-full-width {
-	width: 100%;
-  }
-
 }
