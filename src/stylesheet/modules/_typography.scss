@@ -33,3 +33,7 @@
 .txt-exercise-h3 {
   @include typography(22px, 27px, 400);
 }
+
+.txt_diary {
+  @include typography(12px, 17px, 300);
+}

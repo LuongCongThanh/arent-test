@@ -2,6 +2,7 @@ import React from 'react';
 import CardRecord from "@shared/partial/CardRecord";
 import LineChartCustom from "@shared/partial/LineChartCustom";
 import TableExercise from "@shared/partial/TableExercise";
+import TableLoadMore from "@shared/partial/TableLoadMore";
 
 const RecordPage = () => {
 	return (
@@ -23,10 +24,8 @@ const RecordPage = () => {
 			</div>
 			<div className="record-exercise bg-dark-text my-4">
 				<TableExercise/>
-				<div className="scrollbar">
-					<div className="force-overflow"></div>
-				</div>
 			</div>
+			<TableLoadMore data={[]} loadMoreItems={1} initialItems={1}/>
 		</div>
 	);
 };

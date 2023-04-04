@@ -80,6 +80,12 @@ const LineChartCustom = () => {
 				<Line type="monotone" dataKey="uv" stroke="#FFCC21" activeDot={{r: 6}}/>
 				<Line type="monotone" dataKey="pv" stroke="#8FE9D0" activeDot={{r: 6}}/>
 			</LineChart>
+			<p className="record-chart-month">
+				<span className="month-item bg-light color-primary-300 mr-2">日</span>
+				<span className="month-item bg-light color-primary-300 mr-2">週</span>
+				<span className="month-item bg-light color-primary-300 mr-2">月</span>
+				<span className="month-item bg-primary-300 color-light mr-2">年</span>
+			</p>
 		</div>
 
 	);

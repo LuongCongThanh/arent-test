@@ -4,7 +4,7 @@
   margin: 0 150px;
 
   &-list {
-	@include flex(flex-start, unset);
+	@include flex(center, unset);
 	flex-wrap: wrap;
 	height: 100%;
 
@@ -27,6 +27,19 @@
 		background-color: map-get($color, primary-300);
 		line-height: 32px;
 	  }
+	}
+  }
+
+  &-text{
+	@include flex(center, center);
+	flex-wrap: wrap;
+
+	&-item{
+	  border: 2px solid map-get($color, border-black);
+	  flex-wrap: wrap;
+	  height: 231px;
+	  width: 231px;
+	  margin: 8px;
 	}
   }
 }
@@ -64,11 +77,6 @@
 	  &-text {
 		@include flex(unset, unset);
 		flex-direction: column;
-
-	  }
-
-	  &-time {
-
 	  }
 	}
 
